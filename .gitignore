@@ -3,7 +3,6 @@
 *.zip
 
 # Local files
-.claude/
 install.ps1
 setup.ps1
 CreateShortcut.bat
