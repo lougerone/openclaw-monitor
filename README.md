@@ -80,6 +80,14 @@ Install-Module -Name ps2exe -Scope CurrentUser
 Invoke-PS2EXE -InputFile OpenClawMonitor.ps1 -OutputFile OpenClawMonitor.exe -NoConsole
 ```
 
+## Uninstall
+
+Run `Uninstall.exe` or manually:
+1. Right-click tray icon → Exit
+2. Delete from startup folder (`Win+R` → `shell:startup`)
+3. Delete desktop shortcut
+4. Delete the exe file
+
 ## License
 
 MIT License - Feel free to modify and share!
