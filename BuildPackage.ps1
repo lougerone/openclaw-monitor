@@ -318,7 +318,7 @@ function Show-InstallStep {
         Set-ItemProperty -Path $key -Name "UninstallString" -Value "$($script:installPath)\Uninstall.exe"
         Set-ItemProperty -Path $key -Name "InstallLocation" -Value $script:installPath
         Set-ItemProperty -Path $key -Name "Publisher" -Value "OpenClaw"
-        Set-ItemProperty -Path $key -Name "DisplayVersion" -Value "1.0.5"
+        Set-ItemProperty -Path $key -Name "DisplayVersion" -Value "1.0.7"
         Start-Sleep -Milliseconds 200
 
         $script:progressBar.Value = 100

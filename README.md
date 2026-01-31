@@ -9,6 +9,7 @@ A simple Windows system tray utility to monitor your [OpenClaw](https://openclaw
 - **Real-time status** - Green/Red/Yellow indicator in system tray
 - **Desktop notifications** - Get notified when bot goes online/offline
 - **Quick actions** - Open dashboard, view logs, restart gateway
+- **Remote server support** - Monitor bots running on any server
 - **Lightweight** - Minimal resource usage, checks every 30 seconds
 - **Auto-start** - Optional Windows startup integration
 
@@ -66,10 +67,15 @@ Copy-Item "OpenClawMonitor.exe" "$env:APPDATA\Microsoft\Windows\Start Menu\Progr
 
 The monitor checks `http://127.0.0.1:18789/health` by default.
 
-To change the check interval:
-1. Right-click the tray icon
-2. Click "Settings..."
-3. Enter new interval in seconds
+### Settings
+
+Right-click the tray icon → "Settings..." to configure:
+
+- **Gateway URL** - Set the server address (e.g., `http://myserver.com:18789` for remote bots)
+- **Check interval** - How often to check the bot status (5-3600 seconds)
+- **Test Connection** - Verify the server is reachable before saving
+
+Configuration is saved to `%LOCALAPPDATA%\OpenClawMonitor\config.json`
 
 ## Building from Source
 
